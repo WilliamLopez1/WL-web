@@ -12,7 +12,6 @@
         {
             background-image: url("image/image-banner.jpg");
             background-size: cover;
-
         }
     
         .nav-link
@@ -23,11 +22,24 @@
         .nav-link:hover 
         {
             color: aqua;
+            transition: ease-in .2s;
         }
 
         .nav-link:active
         {
             color: blue;
+        }
+
+        .main
+        {
+            color: white;
+            margin: 0 auto;
+            width: 80vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
@@ -68,16 +80,17 @@
         </nav>
 
         <!--Banner Image-->
-        <div class="banner-image w-100 vh-100 d-flex justify-content-center-align-items-center justify-content-center
-        align-items-center">
-            <div class="content text">
-                <h1 class="text-white">PASSION FOR DATA ANALYSIS</h1>
-
-                <p class="text-white">Data analysis is currently one of the most important 
+        <div class="banner-image w-100 vh-100">
+            <main class="main">
+                <div class="info-content">
+                    <h1>PASSION FOR DATA ANALYSIS</h1>
+    
+                    <p>Data analysis is currently one of the most important 
                     processes in data science since with it it´s possible to collect, process, 
                     analyze, visualize and communicate to generate added value with data.
-                </p>
-            </div>
+                    </p>
+                </div>     
+            </main> 
         </div>
 
     </section>
