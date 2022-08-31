@@ -21,13 +21,13 @@
 
         .nav-link:hover 
         {
-            color: aqua;
+            color: #00E0C6;
             transition: ease-in .2s;
         }
 
         .nav-link:active
         {
-            color: blue;
+            color: #016170;
         }
 
         .main
@@ -42,16 +42,73 @@
             
         }
 
-        .main2
+        .about
         {
-            color: black;
-            margin: 0 auto;
-            width: 80vw;
-            height: 100vh;
+            width: 100vw;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(10, 1fr);
             align-items: center;
+        }
+
+        .about img
+        {
+            width: 100%;
+            grid-column: 1/5;
+
+        }
+
+        .about-info
+        {
+            grid-column: 6/10;
+        }
+
+        .about-info h2
+        {
+            font-size: 2em;
+            color: #016170;
+        }
+
+        .about p
+        {
+            margin-bottom: 1em;
+        }
+
+        .divider
+        {
+            height: 4px;
+            width: 60px;
+            background-color: #00E0C6;
+            margin-top: 5px;
+            margin-bottom: 2em;
+        }
+
+        .download-cv
+        {
+            background-color: #00E0C6;
+            color: #016170;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
             
+        }
+
+        .download-cv:hover
+        {
+            background-color: #016170;
+            color: #FFFFFF;
+        }
+
+        @media screen and (max-width: 1000px)
+        {
+                .about
+                {
+                    color: black;
+                    margin-top: 30vh;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    align-items: center;
+                }
         }
 
         h1
@@ -65,11 +122,6 @@
             text-align: justify;
         }
 
-        .img
-        {
-            width: 300px;
-            border: 7px solid aqua;            
-        }
     </style>
 </head>
 
@@ -92,7 +144,7 @@
                             <a href="#Home" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#About" class="nav-link">About</a>
+                            <a href="#About me" class="nav-link">About me</a>
                         </li>
                         <li class="nav-item">
                             <a href="#Portfolio" class="nav-link">Portfolio</a>
@@ -125,37 +177,42 @@
     </section>
 
             <!--Section About-->
-    <section id="About">
+    <section id="About me">
 
-        <main class="main2">
+        <duv class="about">
 
             <img class="img" src="image/profile-image.jpeg" alt="William López">
 
-            <div class="container my-5 d-grid gap-5">
+            <div class="about-info">
+                <h2>About me</h2>
+                <div class="divider">
 
-                <div class="p-5 border">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore fugiat inventore eaque impedit
-                        ipsum neque debitis eligendi sapiente quaerat omnis eos laudantium enim veritatis ut, in qui,
-                        officiis amet!
-                    </p>
                 </div>
-    
-                <div class="p-5 border">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore fugiat inventore eaque impedit
-                        ipsum neque debitis eligendi sapiente quaerat omnis eos laudantium enim veritatis ut, in qui,
-                        officiis amet!
-                    </p>
-                </div>
-            </div>
-        </main>
+                
+                <p>
+                ¡Hello world, mi name is William!
+                </p>
+
+                <p>Soy Ingeniero Industrial egresado de la universidad pedagógica y tecnológica de colombia 
+                </p>
+
+                <button class="download-cv">
+                    Download CV
+                </button>
+
+            </div> 
+        </div>
     </section>
 
         <!--Section Portfolio-->    
     <section id="Portfolio">
 
-        <div class="container my-5 d-grid gap-5">
+    </br>
+    </br>
+    </br>
+    </br>
+
+        <div class="container my-5 d-grid gap-5" >
             <div class="p-5 border">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore fugiat inventore eaque impedit
