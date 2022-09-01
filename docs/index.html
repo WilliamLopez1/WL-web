@@ -70,6 +70,7 @@
         .about p
         {
             margin-bottom: 0.7em;
+            color: #016170;
         }
 
         .divider
@@ -77,6 +78,15 @@
             height: 4px;
             width: 60px;
             background-color: #00E0C6;
+            margin-top: 5px;
+            margin-bottom: 1.5em;
+        }
+
+        .divider-2
+        {
+            height: 4px;
+            width: 120px;
+            background-color: #CCD1D1;
             margin-top: 5px;
             margin-bottom: 1.5em;
         }
@@ -96,6 +106,41 @@
         {
             background-color: #016170;
             color: #FFFFFF;
+        }
+
+        .skills
+        {
+            width: 100vw;
+            background-color: #EBF4F6;
+            display: grid;
+            padding: 3em;
+            grid-template-columns: repeat(8, 1fr);
+            align-items: center;
+        }
+
+        .skills-title
+        {
+            grid-column: 1/8;
+        }
+
+        .skills-title h3
+        {
+            font-size: 2em;
+        }
+
+        .skills-content
+        {
+            grid-column: 1/3;
+        }
+
+        .skills-content p
+        {
+            color: #016170;
+        }
+
+        .skills-content h4
+        {
+            color:#00E0C6;
         }
 
         @media screen and (max-width: 1000px)
@@ -177,15 +222,13 @@
             <!--Section About me-->
     <section id="About me">
 
-        <duv class="about">
+        <div class="about">
 
             <img class="img" src="image/profile-image.jpeg" alt="William López">
 
             <div class="about-info">
                 <h2>About me</h2>
-                <div class="divider">
-
-                </div>
+                <div class="divider"></div>
                 
                 <p>
                 ¡Hello world, mi name is William!
@@ -217,77 +260,87 @@
 
             </div> 
         </div>
+
+        <div class="skills">
+            <div class="skills-title">
+                <h3>My analysis tools</h3>
+                <div class="divider-2"></div>
+            </div>
+
+            <div class="skills-content">
+                <h4>Excel</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque numquam nam blanditiis, 
+                    ipsa iusto sunt doloremque laboriosam ea vel eos 
+                    error deserunt saepe provident necessitatibus harum? Perferendis, rerum dicta? Iste.
+                </p>
+            </div>
+
+            <div class="skills-content">
+                <h4>Python</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque numquam nam blanditiis, 
+                    ipsa iusto sunt doloremque laboriosam ea vel eos 
+                    error deserunt saepe provident necessitatibus harum? Perferendis, rerum dicta? Iste.
+                </p>
+            </div>
+
+            <div class="skills-content">
+                <h4>R Studio</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque numquam nam blanditiis, 
+                    ipsa iusto sunt doloremque laboriosam ea vel eos 
+                    error deserunt saepe provident necessitatibus harum? Perferendis, rerum dicta? Iste.
+                </p>
+            </div>
+
+        </div>
+
+
     </section>
+
+
 
         <!--Section Portfolio-->    
     <section id="Portfolio">
 
-    </br>
-    </br>
-    </br>
-    </br>
+        <div class="portfolio">
+            <div class="portfolio-headings">
+                <h2>Portfolio</h2>
+                <div class="divider">
 
-        <div class="container my-5 d-grid gap-5" >
-            <div class="p-5 border">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore fugiat inventore eaque impedit
-                    ipsum neque debitis eligendi sapiente quaerat omnis eos laudantium enim veritatis ut, in qui,
-                    officiis amet!
-                </p>
-            </div>
+                    <div class="container">
+                        <div class="card">
+                            <div class="card__img">
 
-            <div class="p-5 border">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore fugiat inventore eaque impedit
-                    ipsum neque debitis eligendi sapiente quaerat omnis eos laudantium enim veritatis ut, in qui,
-                    officiis amet!
-                </p>
+                            </div>
+
+                            <div class="card__title">
+                                <h2>Project description</h2>
+                                <p>
+
+                                </p>
+                            </div>
+
+                            <div class="projects__links">
+
+                            </div>
+
+                        </div>
+
+                    </div>
             </div>
         </div>
 
     </section>
+
         <!--Section Blog-->
     <section id="Blog">
 
-        <div class="container my-5 d-grid gap-5">
-            <div class="p-5 border">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore fugiat inventore eaque impedit
-                    ipsum neque debitis eligendi sapiente quaerat omnis eos laudantium enim veritatis ut, in qui,
-                    officiis amet!
-                </p>
-            </div>
 
-            <div class="p-5 border">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore fugiat inventore eaque impedit
-                    ipsum neque debitis eligendi sapiente quaerat omnis eos laudantium enim veritatis ut, in qui,
-                    officiis amet!
-                </p>
-            </div>
-        </div>
 
     </section>
         <!--Section Contact-->
     <section id="Contact">
 
-        <div class="container my-5 d-grid gap-5">
-            <div class="p-5 border">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore fugiat inventore eaque impedit
-                    ipsum neque debitis eligendi sapiente quaerat omnis eos laudantium enim veritatis ut, in qui,
-                    officiis amet!
-                </p>
-            </div>
-
-            <div class="p-5 border">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore fugiat inventore eaque impedit
-                    ipsum neque debitis eligendi sapiente quaerat omnis eos laudantium enim veritatis ut, in qui,
-                    officiis amet!
-                </p>
-            </div>
-        </div>
+        
 
     </section>
 
