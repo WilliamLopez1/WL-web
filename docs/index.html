@@ -12,6 +12,7 @@
         {
             background-image: url("image/image-banner.jpg");
             background-size: cover;
+            width: 100%;
         }
     
         .nav-link
@@ -43,6 +44,7 @@
 
         .about
         {
+            background-size: cover;
             width: 100vw;
             display: grid;
             grid-template-columns: repeat(10, 1fr);
@@ -88,7 +90,7 @@
             width: 120px;
             background-color: #CCD1D1;
             margin-top: 5px;
-            margin-bottom: 1.5em;
+            margin-bottom: 1em;
         }
 
         .download-cv
@@ -114,32 +116,37 @@
             background-color: #EBF4F6;
             display: grid;
             padding: 3em;
-            grid-template-columns: repeat(8, 1fr);
+            grid-template-columns: auto auto auto;
             align-items: center;
         }
 
-        .skills-title
+        .tools
         {
-            grid-column: 1/8;
+            background-color: #EBF4F6;
         }
 
-        .skills-title h3
+        .sk-title
+        {   padding-left: 3em;
+            padding-top: 3em;
+        }
+
+        .sk-title h3
         {
             font-size: 2em;
             color: #016170;
         }
 
-        .skills-content
+        .text-box
         {
-            grid-column: 1/4;
+            padding: 1em;
         }
 
-        .skills-content p
+        .text-box p, .text-box h5
         {
             color: #016170;
         }
 
-        .skills-content h4
+        .text-box h4
         {
             color:#00E0C6;
         }
@@ -262,38 +269,72 @@
             </div> 
         </div>
 
-        <div class="skills">
-            <div class="skills-title">
-                <h3>My analysis tools</h3>
-                <div class="divider-2"></div>
+
+
+            <!--Skills Part-->
+            <div class="tools">
+                <div class="sk-title">
+                    <h3>My analysis tools</h3>
+                    <div class="divider-2"></div>
+                </div>
+        
+                <div class="skills">
+                
+                    <div class="text-box">
+                        <h5>01.</h5>
+                        <h4>Excel</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque numquam nam blanditiis, 
+                            ipsa iusto sunt doloremque laboriosam ea vel eos 
+                            error deserunt saepe provident necessitatibus harum? Perferendis, rerum dicta? Iste.
+                        </p>
+                    </div>
+        
+                    <div class="text-box">
+                        <h5>02.</h5>
+                        <h4>Python</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque numquam nam blanditiis, 
+                            ipsa iusto sunt doloremque laboriosam ea vel eos 
+                            error deserunt saepe provident necessitatibus harum? Perferendis, rerum dicta? Iste.
+                        </p>
+                    </div>
+        
+                    <div class="text-box">
+                        <h5>03.</h5>
+                        <h4>R & R Studio</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque numquam nam blanditiis, 
+                            ipsa iusto sunt doloremque laboriosam ea vel eos 
+                            error deserunt saepe provident necessitatibus harum? Perferendis, rerum dicta? Iste.
+                        </p>
+                    </div>
+        
+                    <div class="text-box">
+                        <h5>04.</h5>
+                        <h4>Power BI</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque numquam nam blanditiis, 
+                            ipsa iusto sunt doloremque laboriosam ea vel eos 
+                            error deserunt saepe provident necessitatibus harum? Perferendis, rerum dicta? Iste.
+                        </p>
+                    </div>
+        
+                    <div class="text-box">
+                        <h5>05.</h5>
+                        <h4>SQL Server</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque numquam nam blanditiis, 
+                            ipsa iusto sunt doloremque laboriosam ea vel eos 
+                            error deserunt saepe provident necessitatibus harum? Perferendis, rerum dicta? Iste.
+                        </p>
+                    </div>
+        
+                    <div class="text-box">
+                        <h5>06.</h5>
+                        <h4>R Studio</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque numquam nam blanditiis, 
+                            ipsa iusto sunt doloremque laboriosam ea vel eos 
+                            error deserunt saepe provident necessitatibus harum? Perferendis, rerum dicta? Iste.
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <div class="skills-content">
-                <h4>Excel</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque numquam nam blanditiis, 
-                    ipsa iusto sunt doloremque laboriosam ea vel eos 
-                    error deserunt saepe provident necessitatibus harum? Perferendis, rerum dicta? Iste.
-                </p>
-            </div>
-
-            <div class="skills-content">
-                <h4>Python</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque numquam nam blanditiis, 
-                    ipsa iusto sunt doloremque laboriosam ea vel eos 
-                    error deserunt saepe provident necessitatibus harum? Perferendis, rerum dicta? Iste.
-                </p>
-            </div>
-
-            <div class="skills-content">
-                <h4>R Studio</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque numquam nam blanditiis, 
-                    ipsa iusto sunt doloremque laboriosam ea vel eos 
-                    error deserunt saepe provident necessitatibus harum? Perferendis, rerum dicta? Iste.
-                </p>
-            </div>
-
-        </div>
-
 
     </section>
 
