@@ -178,6 +178,29 @@
         .iconbox
         {
             padding: 1em;
+            text-align: center;
+            width: 350px;
+            height: 350px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .box-efect
+        {
+            box-shadow: var(--box-shadow);
+            background-color: #FFFFFF;
+            padding: 25px;
+            transform: all 0.5s ease;
+        }
+
+        .box-efect:hover
+        {
+            box-shadow: none;
+            transform: translateY(-5px);
+            background-image: none;
+            background-color: #EBF4F6;
+            border-radius: 5px;
+            color: #00E0C6;
         }
 
 
@@ -194,16 +217,34 @@
                 .skills
                 {
                     display: grid;
-                    grid-template-columns: auto;
+                    grid-template-columns: auto auto;
                     align-items: center;
                 }
 
                 .cards
                 {
                     display: grid;
+                    grid-template-columns: auto auto;
+                    align-items: center;
+                }
+        }
+
+        @media screen and (max-width: 800px)
+        {
+            .skills
+                {
+                    display: grid;
                     grid-template-columns: auto;
                     align-items: center;
                 }
+
+            .cards
+                {
+                    display: grid;
+                    grid-template-columns: auto;
+                    align-items: center;
+                }
+
         }
 
         h1
@@ -394,28 +435,56 @@
             </div>
 
             <div class="cards">
-                <div class="iconbox">
+                <div class="iconbox box-efect">
                     <h5>Service</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
                     tempora atque doloremque distinctio omnis voluptates laborum.
                     </p>
                 </div>
 
-                <div class="iconbox">
+                <div class="iconbox box-efect">
                     <h5>Service</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
                     tempora atque doloremque distinctio omnis voluptates laborum.
                     </p>
                 </div>
 
-                <div class="iconbox">
+                <div class="iconbox box-efect">
                     <h5>Service</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
                     tempora atque doloremque distinctio omnis voluptates laborum.
                     </p>
                 </div>
 
-                <div class="iconbox">
+                <div class="iconbox box-efect">
+                    <h5>Service</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                    tempora atque doloremque distinctio omnis voluptates laborum.
+                    </p>
+                </div>
+
+                <div class="iconbox box-efect">
+                    <h5>Service</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                    tempora atque doloremque distinctio omnis voluptates laborum.
+                    </p>
+                </div>
+
+                <div class="iconbox box-efect">
+                    <h5>Service</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                    tempora atque doloremque distinctio omnis voluptates laborum.
+                    </p>
+                </div>
+
+                <div class="iconbox box-efect">
+                    <h5>Service</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                    tempora atque doloremque distinctio omnis voluptates laborum.
+                    </p>
+                </div>
+
+                <div class="iconbox box-efect">
                     <h5>Service</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
                     tempora atque doloremque distinctio omnis voluptates laborum.
