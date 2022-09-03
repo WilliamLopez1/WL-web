@@ -65,7 +65,7 @@
             padding: 3em;
         }
 
-        .about-info h2
+        .about-info h2, .portf-title h2
         {
             font-size: 2em;
             color: #016170;
@@ -154,11 +154,38 @@
             color:#00E0C6;
         }
 
+        .portfolio
+        {
+            width: 100vw;
+            background-color: white;
+        }
+
+        .cards
+        {
+            width: 100vw;
+            background-color: #FFFFFF;
+            display: grid;
+            padding: 3em;
+            grid-template-columns: auto auto auto auto;
+            align-items: center;
+        }
+
+        .portf-title
+        {   padding-left: 3em;
+            padding-top: 3em;
+        }
+
+        .iconbox
+        {
+            padding: 1em;
+        }
+
+
+
         @media screen and (max-width: 1000px)
         {
                 .about
                 {
-                    margin-top: 30vh;
                     display: grid;
                     grid-template-columns: repeat(1, 1fr);
                     align-items: center;
@@ -354,31 +381,41 @@
     <section id="Portfolio">
 
         <div class="portfolio">
-            <div class="portfolio-headings">
+            <div class="portf-title">
                 <h2>Portfolio</h2>
-                <div class="divider">
-
-                    <div class="container">
-                        <div class="card">
-                            <div class="card__img">
-
-                            </div>
-
-                            <div class="card__title">
-                                <h2>Project description</h2>
-                                <p>
-
-                                </p>
-                            </div>
-
-                            <div class="projects__links">
-
-                            </div>
-
-                        </div>
-
-                    </div>
+                <div class="divider"></div>
             </div>
+
+            <div class="cards">
+                <div class="iconbox">
+                    <h5>Service</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                    tempora atque doloremque distinctio omnis voluptates laborum.
+                    </p>
+                </div>
+
+                <div class="iconbox">
+                    <h5>Service</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                    tempora atque doloremque distinctio omnis voluptates laborum.
+                    </p>
+                </div>
+
+                <div class="iconbox">
+                    <h5>Service</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                    tempora atque doloremque distinctio omnis voluptates laborum.
+                    </p>
+                </div>
+
+                <div class="iconbox">
+                    <h5>Service</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                    tempora atque doloremque distinctio omnis voluptates laborum.
+                    </p>
+                </div>
+
+            </div>      
         </div>
 
     </section>
