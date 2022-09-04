@@ -3,7 +3,6 @@ window.addEventListener('load', function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         draggable: true,
-        dots: '.carousel__indicadores',
         arrows: {
             prev: '.carousel__anterior',
             next: '.carousel__siguiente'
@@ -16,14 +15,16 @@ window.addEventListener('load', function(){
               settings: {
                 // Set to `auto` and provide item width to adjust to viewport
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 2,
+                dots: '.carousel__indicadores',
               }
             },{
               // screens greater than >= 1024px
               breakpoint: 1024,
               settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3
+                slidesToScroll: 3,
+                dots: '.carousel__indicadores',
               }
             }
         ]
