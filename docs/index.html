@@ -166,7 +166,7 @@
             background-color: #FFFFFF;
             display: grid;
             padding: 3em;
-            grid-template-columns: auto auto auto auto;
+            grid-template-columns: auto auto;
             align-items: center;
         }
 
@@ -175,34 +175,48 @@
             padding-top: 3em;
         }
 
-        .iconbox
+        .services img
         {
-            padding: 1em;
-            text-align: center;
-            width: 350px;
-            height: 350px;
+            width: 100%;
+        }
+
+        .services
+        {
+            position: relative;
             overflow: hidden;
-            text-align: center;
         }
 
-        .box-efect
+        .services .box-efect
         {
-            box-shadow: var(--box-shadow);
-            background-color: #FFFFFF;
-            padding: 25px;
-            transform: all 0.5s ease;
-        }
-
-        .box-efect:hover
-        {
-            box-shadow: none;
-            transform: translateY(-5px);
-            background-image: none;
-            background-color: #EBF4F6;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(21, 20, 51, 0.8);
             border-radius: 5px;
-            color: #00E0C6;
+            padding: 30px;
+            color:#EBF4F6;
+            opacity: 0;
+            align-items: center;
+            text-align: center;
+            transition: all 0.5s ease;
         }
 
+        .services img
+        {
+            transition: all 0.5s ease;
+        }
+
+        .services:hover .box-efect
+        {
+            opacity: 1;
+        }
+
+        .services:hover
+        {
+            transform: scale(1.1);
+        }
 
 
         @media screen and (max-width: 1000px)
@@ -435,61 +449,36 @@
             </div>
 
             <div class="cards">
-                <div class="iconbox box-efect">
-                    <h5>Service</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                    tempora atque doloremque distinctio omnis voluptates laborum.
-                    </p>
+                <div class="services">
+                    <img src="image/project-1.png" alt="EDA">
+                    <div class="box-efect">
+                        <h5>Service</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                        tempora atque doloremque distinctio omnis voluptates laborum.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="iconbox box-efect">
-                    <h5>Service</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                    tempora atque doloremque distinctio omnis voluptates laborum.
-                    </p>
+                <div class="services">
+                    <img src="image/project-1.png" alt="EDA">
+                    <div class="box-efect">
+                        <h5>Service</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                        tempora atque doloremque distinctio omnis voluptates laborum.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="iconbox box-efect">
-                    <h5>Service</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                    tempora atque doloremque distinctio omnis voluptates laborum.
-                    </p>
+                <div class="services">
+                    <img src="image/project-1.png" alt="EDA">
+                    <div class="box-efect">
+                        <h5>Service</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                        tempora atque doloremque distinctio omnis voluptates laborum.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="iconbox box-efect">
-                    <h5>Service</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                    tempora atque doloremque distinctio omnis voluptates laborum.
-                    </p>
-                </div>
-
-                <div class="iconbox box-efect">
-                    <h5>Service</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                    tempora atque doloremque distinctio omnis voluptates laborum.
-                    </p>
-                </div>
-
-                <div class="iconbox box-efect">
-                    <h5>Service</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                    tempora atque doloremque distinctio omnis voluptates laborum.
-                    </p>
-                </div>
-
-                <div class="iconbox box-efect">
-                    <h5>Service</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                    tempora atque doloremque distinctio omnis voluptates laborum.
-                    </p>
-                </div>
-
-                <div class="iconbox box-efect">
-                    <h5>Service</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                    tempora atque doloremque distinctio omnis voluptates laborum.
-                    </p>
-                </div>
 
             </div>      
         </div>
