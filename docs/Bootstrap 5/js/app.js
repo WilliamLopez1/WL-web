@@ -4,8 +4,7 @@ window.addEventListener('load', function(){
         slidesToScroll: 3,
         draggable: true,
         dots: '.carousel__indicadores',
-        arrows: 
-        {
+        arrows: {
             prev: '.carousel__anterior',
             next: '.carousel__siguiente'
         }
