@@ -226,16 +226,22 @@
         {
             position: absolute;
             display: block;
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             border: none;
             top: calc(50% - 35px);
             cursor: pointer;
             line-height: 30px;
             text-align: center;
             background: none;
-            color: #016170;
-            opacity: 70%;
+            color: #CCD1D1;
+            opacity: 100%;
+        }
+
+        .carousel__anterior:hover, .carousel__siguiente:hover
+        {
+            color: #00E0C6;
+            opacity: 100%;
         }
 
         .carousel__anterior
@@ -251,6 +257,26 @@
         .carousel__elemento
         {
             text-align: center;
+        }
+
+        .carousel__indicadores .glider-dot
+        {
+            display: block;
+            width: 30px;
+            height: 5px;
+            background-color: #CCD1D1;
+            opacity: 100%;
+            border-radius: 0;
+        }
+
+        .carousel__indicadores .glider-dot:hover
+        {
+            background-color: #00E0C6;
+        }
+
+        .carousel__indicadores .glider-dot.active
+        {
+            background-color: #00E0C6;
         }
 
 
