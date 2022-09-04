@@ -16,6 +16,7 @@ window.addEventListener('load', function(){
                 // Set to `auto` and provide item width to adjust to viewport
                 slidesToShow: 2,
                 slidesToScroll: 2,
+                draggable: true,
                 dots: '.carousel__indicadores',
               }
             },{
@@ -24,6 +25,7 @@ window.addEventListener('load', function(){
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
+                draggable: true,
                 dots: '.carousel__indicadores',
               }
             }
