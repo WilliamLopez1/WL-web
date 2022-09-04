@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William López | Análisis de datos, Business intelligence, SQL, R & Python</title>
     <link rel="stylesheet" href="Bootstrap 5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <style>
         .banner-image 
         {
@@ -166,7 +167,7 @@
             background-color: #FFFFFF;
             display: grid;
             padding: 3em;
-            grid-template-columns: auto auto;
+            grid-template-columns: auto auto auto auto;
             align-items: center;
         }
 
@@ -213,7 +214,7 @@
             opacity: 1;
         }
 
-        .services:hover
+        .services:hover img
         {
             transform: scale(1.1);
         }
@@ -449,36 +450,127 @@
             </div>
 
             <div class="cards">
-                <div class="services">
-                    <img src="image/project-1.png" alt="EDA">
-                    <div class="box-efect">
-                        <h5>Service</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                        tempora atque doloremque distinctio omnis voluptates laborum.
-                        </p>
+                <div class="carousel">
+                    <div class="carousel__container">
+                        <button aria-label="Anterior" class="carousel__anterior">
+                            <i class="fas fa-chevron-left"></i>    
+                        </button>
+    
+                        <div class="carousel__lista">
+                            <div class="carousel__elemento">
+                                <div class="services">
+                                    <img src="image/project-1.png" alt="EDA">
+                                    <div class="box-efect">
+                                        <h5>Service</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                                        tempora atque doloremque distinctio omnis voluptates laborum.
+                                        </p>
+                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="carousel__elemento">
+                                <div class="services">
+                                    <img src="image/project-2.png" alt="EDA">
+                                    <div class="box-efect">
+                                        <h5>Service</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                                        tempora atque doloremque distinctio omnis voluptates laborum.
+                                        </p>
+                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="carousel__elemento">
+                                <div class="services">
+                                    <img src="image/project-1.png" alt="EDA">
+                                    <div class="box-efect">
+                                        <h5>Service</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                                        tempora atque doloremque distinctio omnis voluptates laborum.
+                                        </p>
+                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>  
+                            </div>
+    
+                            <div class="carousel__elemento">
+                                <div class="services">
+                                    <img src="image/project-2.png" alt="EDA">
+                                    <div class="box-efect">
+                                        <h5>Service</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                                        tempora atque doloremque distinctio omnis voluptates laborum.
+                                        </p>
+                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="carousel__elemento">
+                                <div class="services">
+                                    <img src="image/project-2.png" alt="EDA">
+                                    <div class="box-efect">
+                                        <h5>Service</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                                        tempora atque doloremque distinctio omnis voluptates laborum.
+                                        </p>
+                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+    
+                            <div class="carousel__elemento">
+                                <div class="services">
+                                    <img src="image/project-1.png" alt="EDA">
+                                    <div class="box-efect">
+                                        <h5>Service</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                                        tempora atque doloremque distinctio omnis voluptates laborum.
+                                        </p>
+                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="carousel__elemento">
+                                <div class="services">
+                                    <img src="image/project-2.png" alt="EDA">
+                                    <div class="box-efect">
+                                        <h5>Service</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
+                                        tempora atque doloremque distinctio omnis voluptates laborum.
+                                        </p>
+                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>  
+                            </div>
+    
+                        </div>
+    
+                        <button aria-label="Siguiente" class="carousel__siguiente">
+                            <i class="fas fa-chevron-right"></i>    
+                        </button>
                     </div>
-                </div>
 
-                <div class="services">
-                    <img src="image/project-1.png" alt="EDA">
-                    <div class="box-efect">
-                        <h5>Service</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                        tempora atque doloremque distinctio omnis voluptates laborum.
-                        </p>
-                    </div>
+                    <div role="tablist" class="carousel__indicadores"></div>
                 </div>
-
-                <div class="services">
-                    <img src="image/project-1.png" alt="EDA">
-                    <div class="box-efect">
-                        <h5>Service</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                        tempora atque doloremque distinctio omnis voluptates laborum.
-                        </p>
-                    </div>
-                </div>
-
 
             </div>      
         </div>
@@ -500,8 +592,10 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
     <script src="Bootstrap 5/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e54e8393ba.js" crossorigin="anonymous"></script>
+    <script src="Bootstrap 5/js/app.js"></script>
 
     <script>
         var nav = document.querySelector('nav');
