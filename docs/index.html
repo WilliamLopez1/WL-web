@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William López | Análisis de datos, Business intelligence, SQL, R & Python</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="Bootstrap 5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <style>
@@ -14,7 +15,7 @@
             background-size: cover;
             display: flex;
             background-position: center center;
-            background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.1)),
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
             url("image/image-banner.jpg");
         }
     
@@ -26,12 +27,17 @@
         .nav-link:hover 
         {
             color: #00E0C6;
-            transition: ease-in .2s;
+            transition: ease-in .4s;
+        }
+
+        .bg-dark
+        {
+            background-color: #016170;
         }
 
         .nav-link:active
         {
-            color: #016170;
+            color: #0ad3d3;
         }
 
         .main
@@ -48,9 +54,8 @@
         .about
         {
             background-size: cover;
-            width: 100vw;
             display: grid;
-            grid-template-columns: repeat(10, 1fr);
+            grid-template-columns: auto auto;
             align-items: center;
         }
 
@@ -114,9 +119,16 @@
             text-decoration: none;
         }
 
+        .download-cv:active
+        {
+            background-color: #0ad3d3;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
         .skills, .blog
         {
-            background-size: cover;
+            
             background-color: #EBF4F6;
             display: grid;
             padding: 3em;
@@ -127,8 +139,6 @@
         .tools
         {
             background-color: #EBF4F6;
-            background-size: cover;
-            background-position: center center;
         }
 
         .sk-title
@@ -163,20 +173,21 @@
         .portfolio
         {
             background-size: cover;
-            background-color: white;
+            background-color:#FFFFFF;
         }
 
         .cards
         {
-            width: 100vw;
+            
             background-color: #FFFFFF;
-            margin: auto;
+            margin: 0 auto;
             padding: 3em;
         }
 
         .portf-title
-        {   padding-left: 3em;
-            padding-top: 3em;
+        {   
+            padding-left: 3em;
+            padding-top: 3.5em;
         }
 
         .services img
@@ -368,12 +379,12 @@
         </nav>
 
         <!--Banner Image-->
-        <div class="banner-image vw-100 vh-100">
+        <div class="banner-image">
             <main class="main">
-                <div class="info-content">
+                <div class="info-content" data-aos="fade-up">
                     <h1>PASSION FOR DATA ANALYSIS</h1>
                     </br>
-                    <p>Data analysis is currently one of the most important 
+                    <p data-aos="fade-up">Data analysis is currently one of the most important 
                     processes in data science since with it it´s possible to collect, process, 
                     analyze, visualize and communicate to generate added value with data.
                     </p>
@@ -390,7 +401,7 @@
 
             <img class="img" src="image/profile-image.jpeg" alt="William López">
 
-            <div class="about-info">
+            <div class="about-info" data-aos="fade-up">
                 <h2>About me</h2>
                 <div class="divider"></div>
                 
@@ -429,12 +440,12 @@
 
             <!--Skills Part-->
             <div class="tools">
-                <div class="sk-title">
+                <div class="sk-title" data-aos="fade-up">
                     <h3>My analysis tools</h3>
                     <div class="divider-2"></div>
                 </div>
         
-                <div class="skills">
+                <div class="skills" data-aos="fade-up">
                 
                     <div class="text-box">
                         <h5>01.</h5>
@@ -500,12 +511,12 @@
     <section id="Portfolio">
 
         <div class="portfolio">
-            <div class="portf-title">
+            <div class="portf-title" data-aos="fade-up">
                 <h2>Portfolio</h2>
                 <div class="divider"></div>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-aos="fade-up">
                 <div class="carousel">
                     <div class="carousel__container">
                         <button aria-label="Anterior" class="carousel__anterior">
@@ -551,11 +562,11 @@
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
                                         tempora atque doloremque distinctio omnis voluptates laborum.
                                         </p>
-                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
+                                        <a href="project_1.html" class="download-cv" target="_blank">
                                             View Project
                                         </a>
                                     </div>
-                                </div>  
+                                </div>
                             </div>
     
                             <div class="carousel__elemento">
@@ -650,6 +661,10 @@
     </section>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
     <script src="Bootstrap 5/js/bootstrap.bundle.min.js"></script>
