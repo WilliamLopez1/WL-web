@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900&display=swap');
+
+body
+{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.8;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: 900 !important;
+}
+
+a
+{
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 800;
+}
+
+section
+{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+    position: relative;
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 224, 254, 0.7),rgba(17, 7, 254, 0.7));
+    z-index: -1;
+}
+
+.bg-cover
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-section
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn
+{
+    padding: 14px 22px;
+    transition: all 0.3s ease;
+}
+
+.btn-main
+{
+    background: linear-gradient(to right, #00e0fe,#1107fe);
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.btn:hover
+{
+    color: #FFFFFF;
+    transform: translateY(-5px);
+}
+
+.navbar
+{
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-intro
+{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.img
+{   
+    width: 100%
+}
+
+.section-intro .divider
+{
+    height: 4px;
+    width: 70px;
+    margin: 16px auto;
+    background: linear-gradient(to right, #00e0fe,#1107fe);
+}
+
+
+.icon
+{
+    background: linear-gradient(#00e0fe,#1107fe);
+    width: 50px;
+    height:50px;
+    border-radius: 100px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+.icon:hover
+{
+    transform: translateY(-5px);
+}

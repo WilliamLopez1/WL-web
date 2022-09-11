@@ -1,693 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William López | Análisis de datos, Business intelligence, SQL, R & Python</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="Bootstrap 5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
-            <!--Styles-->
-    <style>
-        .banner-image 
-        {
-            background-size: cover;
-            display: flex;
-            background-position: center center;
-            background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-            url("image/image-banner.jpg");
-        }
-    
-        .nav-link
-        {
-            color:white
-        }
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-        .nav-link:hover 
-        {
-            color: #00E0C6;
-            transition: ease-in .4s;
-        }
+    <link rel="stylesheet" href="css/style.css">
 
-        .bg-dark
-        {
-            background-color: #016170;
-        }
-
-        .nav-link:active
-        {
-            color: #0ad3d3;
-        }
-
-        .main
-        {
-            color: white;
-            margin: 0 auto;
-            width: 80vw;
-            height: 100vh;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
-        }
-
-        .about
-        {
-            background-size: cover;
-            display: grid;
-            grid-template-columns: auto auto;
-            align-items: center;
-        }
-
-        .about img
-        {
-            width: 100%;
-            grid-column: 1/5;
-        }
-
-        .about-info
-        {
-            grid-column: 5/10;
-            padding: 3em;
-        }
-
-        .about-info h2, .portf-title h2
-        {
-            font-size: 2em;
-            color: #016170;
-        }
-
-        .about p
-        {
-            margin-bottom: 0.7em;
-            color: #016170;
-        }
-
-        .divider
-        {
-            height: 4px;
-            width: 60px;
-            background-color: #00E0C6;
-            margin-top: 5px;
-            margin-bottom: 1.5em;
-        }
-
-        .divider-2
-        {
-            height: 4px;
-            width: 120px;
-            background-color: #CCD1D1;
-            margin-top: 5px;
-            margin-bottom: 1em;
-        }
-
-        .download-cv
-        {
-            background-color: #00E0C6;
-            color: #016170;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .download-cv:hover
-        {
-            background-color: #016170;
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-
-        .download-cv:active
-        {
-            background-color: #0ad3d3;
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-
-        .skills, .blog
-        {
-            
-            background-color: #EBF4F6;
-            display: grid;
-            padding: 3em;
-            grid-template-columns: auto auto auto;
-            align-items: center;
-        }
-
-        .tools
-        {
-            background-color: #EBF4F6;
-        }
-
-        .sk-title
-        {   width: 100vh;
-            padding-left: 3em;
-            padding-top: 3em;
-            background-size: cover;
-            background-position: center center;
-        }
-
-        .sk-title h3
-        {
-            font-size: 2em;
-            color: #016170;
-        }
-
-        .text-box
-        {
-            padding: 1em;
-        }
-
-        .text-box p, .text-box h5
-        {
-            color: #016170;
-        }
-
-        .text-box h4
-        {
-            color:#00E0C6;
-        }
-
-        .portfolio
-        {
-            background-size: cover;
-            background-color:#FFFFFF;
-        }
-
-        .cards
-        {
-            
-            background-color: #FFFFFF;
-            margin: 0 auto;
-            padding: 3em;
-        }
-
-        .portf-title
-        {   
-            padding-left: 3em;
-            padding-top: 4em;
-        }
-
-        .services img
-        {
-            width: 100%;
-        }
-
-        .services
-        {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .services .box-efect
-        {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(21, 20, 51, 0.8);
-            border-radius: 5px;
-            padding: 30px;
-            color:#EBF4F6;
-            opacity: 0;
-            align-items: center;
-            text-align: center;
-            transition: all 0.5s ease;
-        }
-
-        .services img
-        {
-            transition: all 0.5s ease;
-        }
-
-        .services:hover .box-efect
-        {
-            opacity: 1;
-            text-align: center;
-        }
-
-        .services:hover img
-        {
-            transform: scale(1.1);
-        }
-
-        .carousel__lista
-        {
-            overflow: hidden;
-        }
-
-        .carousel__container
-        {
-            position: relative;
-        }
-
-        .carousel__anterior, .carousel__siguiente
-        {
-            position: absolute;
-            display: block;
-            width: 40px;
-            height: 40px;
-            border: none;
-            top: calc(50% - 35px);
-            cursor: pointer;
-            line-height: 30px;
-            text-align: center;
-            background: none;
-            color: #CCD1D1;
-            opacity: 100%;
-        }
-
-        .carousel__anterior:hover, .carousel__siguiente:hover
-        {
-            color: #00E0C6;
-            opacity: 100%;
-        }
-
-        .carousel__anterior
-        {
-            left: -30px;
-        }
-
-        .carousel__siguiente
-        {
-            right: -30px;
-        }
-
-        .carousel__elemento
-        {
-            text-align: center;
-        }
-
-        .carousel__indicadores .glider-dot
-        {
-            display: block;
-            width: 30px;
-            height: 3px;
-            background-color: #CCD1D1;
-            opacity: 100%;
-            border-radius: 0;
-        }
-
-        .carousel__indicadores .glider-dot:hover
-        {
-            background-color: #00E0C6;
-        }
-
-        .carousel__indicadores .glider-dot.active
-        {
-            background-color: #00E0C6;
-        }
-
-
-        @media screen and (max-width: 1000px)
-        {
-                .about
-                {
-                    display: grid;
-                    grid-template-columns: repeat(1, 1fr);
-                    align-items: center;
-                }
-
-                .skills
-                {
-                    display: grid;
-                    grid-template-columns: auto auto;
-                    align-items: center;
-                }
-        }
-
-        @media screen and (max-width: 800px)
-        {
-            .skills
-                {
-                    display: grid;
-                    grid-template-columns: auto;
-                    align-items: center;
-                }
-
-        }
-
-        h1
-        {
-            font-size: 3em;
-        }
-
-        p
-        {
-            font-size: 1.2em;
-            text-align: justify;
-        }
-
-    </style>
+    <title>William López | Data analysis, Business intelligence, SQL, R & Python</title>
 </head>
+<body data-bs-spy="scroll" data-bs-target="#navbar"> 
 
-<body>
-            <!--Section Home-->
-    <section id="Home">
-            <!--Navbar-->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-2">
-            <div class="container">
-                <a href="#Home" class="navbar-brand">William López  |  Data Analyst</a>
-                <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
-                    aria-controls="navbarNav" aria-expanded="false" aria-laber="Toggle Navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!--navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="#">William López | Data Analyst</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Analysis tools">Analysis tools</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="mx-auto"></div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="#Home" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#About me" class="nav-link">About me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Portfolio" class="nav-link">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Blog" class="nav-link">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!--Banner Image-->
-        <div class="banner-image">
-            <main class="main">
-                <div class="info-content" data-aos="fade-up">
-                    <h1>PASSION FOR DATA ANALYSIS</h1>
-                    </br>
-                    <p data-aos="fade-up">Data analysis is currently one of the most important 
-                    processes in data science since with it it´s possible to collect, process, 
-                    analyze, visualize and communicate to generate added value with data.
+    <!--hero-->
+    <section id="Home" class="bg-cover hero-section" style="background-image:url(image/image-banner.jpg)">
+        <div class="overlay"></div>
+        <div class="container text-white text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4">PASSION FOR </br> DATA ANALYSIS</h1>
+                    <p class="my-4">
+                        Data analysis is currently one of the most important 
+                        processes in data science since with it it´s <br> possible to collect, process, 
+                        analyze, visualize and communicate to generate added value with data.
                     </p>
-                </div>     
-            </main> 
-        </div>
-
-    </section>
-
-            <!--Section About me-->
-    <section id="About me">
-
-        <div class="about">
-
-            <img class="img" src="image/profile-image.jpeg" alt="William López">
-
-            <div class="about-info" data-aos="fade-up">
-                <h2>About me</h2>
-                <div class="divider"></div>
-                
-                <p>
-                ¡Hello world, mi name is William!
-                </p>
-
-                <p>
-                    I´m an Industrial Engineer trained at the Pedagogical and Technological University of Colombia 
-                    with international certification as Six Sigma Black Belt.
-                </p>
-
-                <p>
-                    During the last two years I have been part of analysis teams
-                    of productive activities in the agri-food industry.
-                </p>
-
-                <p>
-                    The passion for data science has made me enter the world of data analysis,
-                    developing projects of analysis of the productivity and quality of processes, optimization and EDA,
-                    to give value added to organizations.
-                </p>
-
-                <p>
-                    Today I want to face increasingly complex projects that contribute to my professional growth.
-                </p>
-
-                <a href="image/William CV.pdf" class="download-cv" download="William CV">
-                    Download CV
-                </a>
-
-            </div> 
-        </div>
-
-
-
-            <!--Skills Part-->
-            <div class="tools">
-                <div class="sk-title" data-aos="fade-up">
-                    <h3>My analysis tools</h3>
-                    <div class="divider-2"></div>
-                </div>
-        
-                <div class="skills" data-aos="fade-up">
-                
-                    <div class="text-box">
-                        <h5>01.</h5>
-                        <h4>Excel</h4>
-                        <p>Currently the implementation of Power Query, Power Pivot and pivot tables continue to contribute
-                            extensively in the treatment of data and in the generation of reports for the communication
-                            managerial.
-                        </p>
-                    </div>
-        
-                    <div class="text-box">
-                        <h5>02.</h5>
-                        <h4>Python</h4>
-                        <p>The best language for data manipulation with libraries like pandas and
-                            numpy, and the development of artificial intelligence models. Every day
-                            I learn something new from this comprehensive and widely applicable tool.
-                        </p>
-                    </div>
-        
-                    <div class="text-box">
-                        <h5>03.</h5>
-                        <h4>R & R Studio</h4>
-                        <p> My preferred language for visualization and statistical analysis, for it´s simplicity
-                            that offer libraries like dplyr and ggplot 2 that allow extraction,
-                            cleaning and transformation as well as storytelling with R markdown and Shiny.
-                        </p>
-                    </div>
-        
-                    <div class="text-box">
-                        <h5>04.</h5>
-                        <h4>Power BI</h4>
-                        <p>A very practical and effective visualization and communication tool due to it´s
-                            intuitive handling that together with the DAX application provide ease in the generation
-                            of reports optimizing the development of Business Intelligence.
-                        </p>
-                    </div>
-        
-                    <div class="text-box">
-                        <h5>05.</h5>
-                        <h4>SQL Server</h4>
-                        <p>Its use is essential in the manipulation, standardization and recovery of data,
-                            in addition, the practicality for the generation of dataframes and relational databases
-                            allows robust database manipulation.
-                        </p>
-                    </div>
-        
-                    <div class="text-box">
-                        <h5>06.</h5>
-                        <h4>Statistics</h4>
-                        <p>Mastery of statistical concepts such as inference, estimation, correlation, and
-                            hypothesis testing is key to performing EDA and the correct interpretation of data
-                            that allows the formulation of models that adjust to reality.
-                        </p>
-                    </div>
+                    <a href="#About" class="btn btn-main">Get started</a>
                 </div>
             </div>
+        </div>
 
     </section>
 
+    <!--about-->
+    <section id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+                    <img class="img" src="image/profile-image.jpeg" alt="William López">
+                </div>
 
+                <div class="col-12 col-sm-6 align-self-center section-intro text-center">
+                    <h1>About me</h1>
+                    <div class="divider"></div>
+                    <p>
+                        I´m an Industrial Engineer trained at the Pedagogical and Technological University of Colombia 
+                        with international certification as Six Sigma Black Belt.
+                    </p>
+                    <p>
+                        During the last two years I have been part of analysis teams
+                        of productive activities in the agri-food industry.
+                    </p>
+                    <p>
+                        The passion for data science has made me enter the world of data analysis,
+                        developing projects of analysis of the productivity and quality of processes, optimization and EDA,
+                        to give value added to organizations.
+                    </p>
+                    <p>
+                        Today I want to face increasingly complex projects that contribute to my professional growth.
+                    </p>
+                    <a href="image/William CV.pdf" class="btn btn-main text-white" download="William CV">Download CV</a> 
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <!--Section Portfolio-->    
+    <!--analysis tools-->
+    <section id="Analysis tools" class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 section-intro text-center">
+            <h1>Analysis tools</h1>
+            <div class="divider"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 feature">
+            <div class="icon"><i class="fa-solid fa-file-excel"></i></div>
+            <h5>Excel</h5>
+            <p>
+              Currently the implementation of Power Query, Power Pivot and pivot tables continue to contribute
+              extensively in the treatment of data and in the generation of reports for the communication
+              managerial.
+            </p>
+          </div>
+
+          <div class="col-md-4 feature">
+            <div class="icon"><i class="fa-brands fa-python"></i></div>
+            <h5>Python</h5>
+            <p>
+              The best language for data manipulation with libraries like pandas and
+              numpy, and the development of artificial intelligence models. Every day
+              I learn something new from this comprehensive and widely applicable tool.
+            </p>
+          </div>
+    
+          <div class="col-md-4 feature">
+            <div class="icon"><i class="fa-solid fa-registered"></i></div>
+            <h5>R & Rstudio</h5>
+            <p>
+              My preferred language for visualization and statistical analysis, for it´s simplicity
+              that offer libraries like dplyr and ggplot 2 that allow extraction,
+              cleaning and transformation as well as storytelling with R markdown and Shiny.
+            </p>
+          </div>
+
+          <div class="col-md-4 feature">
+            <div class="icon"><i class="fa-solid fa-chart-simple"></i></div>
+            <h5>Power BI</h5>
+            <p>
+              A very practical and effective visualization and communication tool due to it´s
+              intuitive handling that together with the DAX application provide ease in the generation
+              of reports optimizing the development of Business Intelligence.
+            </p>
+          </div>
+
+          <div class="col-md-4 feature">
+            <div class="icon"><i class="fa-solid fa-database"></i></div>
+            <h5>SQL Server</h5>
+            <p>
+              Its use is essential in the manipulation, standardization and recovery of data,
+              in addition, the practicality for the generation of dataframes and relational databases
+              allows robust database manipulation.
+            </p>
+          </div>
+
+          <div class="col-md-4 feature">
+            <div class="icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <h5>Statistics</h5>
+            <p>
+              Mastery of statistical concepts such as inference, estimation, correlation, and
+              hypothesis testing is key to performing EDA and the correct interpretation of data
+              that allows the formulation of models that adjust to reality.
+            </p>
+          </div>
+
+        </div>
+      </div>
+        
+
+      </div>
+
+    </section>
+
+    <!--portfolio-->
     <section id="Portfolio">
 
-        <div class="portfolio">
-            <div class="portf-title" data-aos="fade-up">
-                <h2>Portfolio</h2>
-                <div class="divider"></div>
-            </div>
-
-            <div class="cards" data-aos="fade-up">
-                <div class="carousel">
-                    <div class="carousel__container">
-                        <button aria-label="Anterior" class="carousel__anterior">
-                            <i class="fas fa-chevron-left"></i>    
-                        </button>
-    
-                        <div class="carousel__lista">
-                            <div class="carousel__elemento">
-                                <div class="services">
-                                    <img src="image/project-1.png" alt="EDA">
-                                    <div class="box-efect">
-                                        <h5>EDA almacenamiento de arroz paddy en silobolsa</h5>
-                                        <p>
-                                            Análisis exploratorio de datos del proceso de almacenamiento de arroz paddy 
-                                            seco y preseco en silos bolsa aplicando R & RStudio, Estadística y
-                                            visualización de datos para determinar las variables que influyen en la calidad 
-                                            del grano.
-                                        </p>
-                                        <a href="project_1.html" class="download-cv" target="_blank">
-                                            View Project
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="carousel__elemento">
-                                <div class="services">
-                                    <img src="image/project-2.png" alt="EDA">
-                                    <div class="box-efect">
-                                        <h5>Service</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                                        tempora atque doloremque distinctio omnis voluptates laborum.
-                                        </p>
-                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
-                                            View Project
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="carousel__elemento">
-                                <div class="services">
-                                    <img src="image/project-1.png" alt="EDA">
-                                    <div class="box-efect">
-                                        <h5>Service</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                                        tempora atque doloremque distinctio omnis voluptates laborum.
-                                        </p>
-                                        <a href="project_1.html" class="download-cv" target="_blank">
-                                            View Project
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="carousel__elemento">
-                                <div class="services">
-                                    <img src="image/project-2.png" alt="EDA">
-                                    <div class="box-efect">
-                                        <h5>Service</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                                        tempora atque doloremque distinctio omnis voluptates laborum.
-                                        </p>
-                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
-                                            View Project
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="carousel__elemento">
-                                <div class="services">
-                                    <img src="image/project-2.png" alt="EDA">
-                                    <div class="box-efect">
-                                        <h5>Service</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                                        tempora atque doloremque distinctio omnis voluptates laborum.
-                                        </p>
-                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
-                                            View Project
-                                        </a>
-                                    </div>
-                                </div> 
-                            </div>
-    
-                            <div class="carousel__elemento">
-                                <div class="services">
-                                    <img src="image/project-1.png" alt="EDA">
-                                    <div class="box-efect">
-                                        <h5>Service</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                                        tempora atque doloremque distinctio omnis voluptates laborum.
-                                        </p>
-                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
-                                            View Project
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="carousel__elemento">
-                                <div class="services">
-                                    <img src="image/project-2.png" alt="EDA">
-                                    <div class="box-efect">
-                                        <h5>Service</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere 
-                                        tempora atque doloremque distinctio omnis voluptates laborum.
-                                        </p>
-                                        <a href="image/William CV.pdf" class="download-cv" download="William CV">
-                                            View Project
-                                        </a>
-                                    </div>
-                                </div>  
-                            </div>
-    
-                        </div>
-    
-                        <button aria-label="Siguiente" class="carousel__siguiente">
-                            <i class="fas fa-chevron-right"></i>    
-                        </button>
-                    </div>
-
-                    <div role="tablist" class="carousel__indicadores"></div>
-                </div>
-
-            </div>      
-        </div>
-
     </section>
 
-            <!--Section Blog-->
-    <section id="Blog">
-        <div class="blog">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+</script>
 
-        </div>
-
-
-
-    </section>
-            <!--Section Contact-->
-    <section id="Contact">
-
-        
-
-    </section>
-
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
-    <script src="Bootstrap 5/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/e54e8393ba.js" crossorigin="anonymous"></script>
-    <script src="Bootstrap 5/js/app.js"></script>
-
-    <script>
-        var nav = document.querySelector('nav');
-
-        window.addEventListener('scroll', function () {
-            if (window.pageYOffset > 100) {
-                nav.classList.add('bg-dark', 'shadow');
-            } else {
-                nav.classList.remove('bg-dark', 'shadow');
-            }
-        });
-    </script>
+<script src="https://kit.fontawesome.com/e54e8393ba.js" crossorigin="anonymous">
+</script>
 
 </body>
-
 </html>
