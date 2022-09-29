@@ -264,3 +264,8 @@ section
     backdrop-filter: blur(5px);
     padding: 0.7em;
 }
+.feature:hover
+{
+    background-color: #FFFFFF;
+    backdrop-filter: blur(8px);
+}
