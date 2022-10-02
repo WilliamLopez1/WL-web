@@ -193,7 +193,6 @@ section
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
 .hero-section
@@ -393,7 +392,7 @@ section
 
 .carousel__elemento:hover
 {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .carousel__indicadores .glider-dot
