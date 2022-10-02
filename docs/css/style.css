@@ -323,12 +323,14 @@ section
 .feature-2
 {
     border-radius: 5%;
-    border-top: 1px solid rgba(26, 18, 18, 0.418);
-    border-left: 1px solid rgba(26, 18, 18, 0.418);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(177, 164, 164, 0.418);
+    border-left: 1px solid rgba(107, 99, 99, 0.418);
     border-right: 1px solid rgba(26, 18, 18, 0.418);
     border-bottom: 1px solid rgba(26, 18, 18, 0.418);
     backdrop-filter: blur(15px);
     padding: 0.7em;
+    transition: all 0.5s ease;
 }
 
 .feature-2:hover
@@ -364,8 +366,8 @@ section
 
 .carousel__anterior:hover, .carousel__siguiente:hover
 {
-    color: #0e09ab;
-    opacity: 50%;
+    color: #1107fe;
+    opacity: 100%;
 }
 
 .carousel__anterior
@@ -381,6 +383,7 @@ section
 .carousel__lista
 {
     margin: 1em;
+    overflow: hidden;
 }
 
 .carousel__elemento
@@ -391,4 +394,21 @@ section
 .carousel__elemento:hover
 {
     transform: scale(1.05);
+}
+
+.carousel__indicadores .glider-dot
+{
+    display: block;
+    background: linear-gradient(#00e0fe,#1107fe);
+    opacity: .2;
+}
+
+.carousel__indicadores .glider-dot:hover
+{
+    opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active
+{
+    opacity: 1;
 }
