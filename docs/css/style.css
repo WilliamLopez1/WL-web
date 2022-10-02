@@ -122,12 +122,28 @@ i{
 img
 {
     width: 100%;
+    
+}
+
+.img-profile
+{
     border-radius: 5%;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(15px);
 }
+
+.image-port
+{
+    height: 300px;
+}
+
+/*border-radius: 5%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);*/
 
 section
 {
@@ -154,6 +170,7 @@ section
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 }
 
 .hero-section
@@ -199,12 +216,6 @@ section
 {
     margin-bottom: 40px;
     margin-top: 40px;
-}
-
-.img
-{   
-    width: 100%
-    
 }
 
 .section-intro .divider
@@ -269,15 +280,6 @@ section
     transform: translateY(-5px);
 }
 
-.service .service-img
-{
-    position: relative;
-}
-
-.image-port
-{
-    height: 220px;
-}
 
 
 .feature
@@ -289,7 +291,59 @@ section
     backdrop-filter: blur(15px);
     padding: 0.7em;
 }
+
 .feature:hover
 {
     background-color: #FFFFFF;
+}
+
+.feature-2
+{
+    border-radius: 5%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    padding: 0.7em;
+}
+
+.feature-2:hover
+{
+    background-color: #FFFFFF;
+}
+
+.tools_father
+{
+    margin: 10px;
+}
+
+.carousel__contenedor
+{
+    position: relative;
+}
+
+.carousel__anterior, .carousel__siguiente
+{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% -35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #1107fe;
+    opacity: 80%;
+}
+
+.carousel__anterior
+{
+    left: -30px;
+}
+
+.carousel__siguiente
+{
+    right: -30px;
 }
