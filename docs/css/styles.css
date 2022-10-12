@@ -819,6 +819,7 @@ img {
 .contact__information {
   display: flex;
   margin-bottom: var(--mb-2);
+  
 }
 
 .contact__icon {
