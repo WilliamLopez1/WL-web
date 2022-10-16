@@ -12,6 +12,7 @@
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --first-color-lighter-background: hsla(var(--hue-color), 92%, 85%, 0.2);
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
@@ -262,6 +263,7 @@ img {
 /*==================== HOME ====================*/
 .home__container {
   gap: 1rem;
+
 }
 
 .home__content {
@@ -344,8 +346,8 @@ img {
 .letters {
   position: absolute;
   width: 30%;
-  top: 5px;
-  left: 5px;
+  top: 3px;
+  left: 0px;
   opacity: 0.2;
   color: var(--first-color);
 }
@@ -417,6 +419,10 @@ img {
 }
 
 /*==================== ABOUT ====================*/
+.light__background{
+  background-color: var(--first-color-lighter-background); 
+}
+
 .about__img {
   width: 200px;
   border-radius: .5rem;
